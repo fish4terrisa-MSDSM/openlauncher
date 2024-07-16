@@ -22,8 +22,7 @@
         android:launchMode="singleTask"
         android:stateNotNeeded="true"
         android:taskAffinity=""
-        android:theme="@style/Home.Light"
-        android:requestLegacyExternalStorage="true">
+        android:theme="@style/Home.Light">
 
         <meta-data
             android:name="android.max_aspect"
