@@ -39,7 +39,7 @@ aapt: env-ANDROID_SDK_ROOT
 build:
 	rm -f $(DIST_DIR)/*.apk
 	$(MAKE) A="clean assembleFlavorAtest -x lint" gradle
-	find app -type f -newermt '-100 seconds' -iname '*.apk' -not -iname '*unsigned.apk' | xargs cp -R -t $(DIST_DIR)/
+	find app -type f -newermt '-100 seconds' -iname '*.apk' | xargs cp -R -t $(DIST_DIR)/
 	$(MAKE) A="-build" gradle-analyze-log
 
 lint:
